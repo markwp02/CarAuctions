@@ -15,6 +15,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityService", "src\Iden
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GatewayService", "src\GatewayService\GatewayService.csproj", "{34122C1B-4231-4E0C-8894-14BA64DB54A6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{3CBEA304-8D56-434E-9F17-00AEB994383F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuctionService.UnitTests", "tests\AuctionService.UnitTests\AuctionService.UnitTests.csproj", "{0F8DF694-DF52-4018-BD26-CD3472BDAC76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuctionService.IntegrationTests", "tests\AuctionService.IntegrationTests\AuctionService.IntegrationTests.csproj", "{BF894970-C8B0-4AE4-92A1-B0A505DFE0A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +47,14 @@ Global
 		{34122C1B-4231-4E0C-8894-14BA64DB54A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34122C1B-4231-4E0C-8894-14BA64DB54A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34122C1B-4231-4E0C-8894-14BA64DB54A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F8DF694-DF52-4018-BD26-CD3472BDAC76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F8DF694-DF52-4018-BD26-CD3472BDAC76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F8DF694-DF52-4018-BD26-CD3472BDAC76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F8DF694-DF52-4018-BD26-CD3472BDAC76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF894970-C8B0-4AE4-92A1-B0A505DFE0A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF894970-C8B0-4AE4-92A1-B0A505DFE0A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF894970-C8B0-4AE4-92A1-B0A505DFE0A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF894970-C8B0-4AE4-92A1-B0A505DFE0A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,5 +65,7 @@ Global
 		{A1D6CC6E-6530-4772-9084-03D26FEBA108} = {E2DE59C2-4B21-451C-8B1B-CE82D4FDC4DB}
 		{75CD48DC-EA5B-4283-B342-2F51FE82E499} = {E2DE59C2-4B21-451C-8B1B-CE82D4FDC4DB}
 		{34122C1B-4231-4E0C-8894-14BA64DB54A6} = {E2DE59C2-4B21-451C-8B1B-CE82D4FDC4DB}
+		{0F8DF694-DF52-4018-BD26-CD3472BDAC76} = {3CBEA304-8D56-434E-9F17-00AEB994383F}
+		{BF894970-C8B0-4AE4-92A1-B0A505DFE0A4} = {3CBEA304-8D56-434E-9F17-00AEB994383F}
 	EndGlobalSection
 EndGlobal
