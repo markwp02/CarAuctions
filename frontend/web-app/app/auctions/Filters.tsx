@@ -49,12 +49,16 @@ export default function Filters() {
     const orderBy = useParamsStore(state => state.orderBy);
     const filterBy = useParamsStore(state => state.filterBy);
 
+/*
+                            <Icon className='mr-3 h-4 w-4' />
+
+*/
+
     return (
         <div className='flex justify-between items-center mb-4'>
-
             <div>
                 <span className='uppercase text-sm text-gray-500 mr-2'>Filter by</span>
-                <ButtonGroup>
+                <div className="inline-flex rounded-md shadow-sm" role='group'>
                     {filterButtons.map(({ label, icon: Icon, value }) => (
                         <Button
                             key={value}
@@ -65,13 +69,13 @@ export default function Filters() {
                             {label}
                         </Button>
                     ))}
-                </ButtonGroup>
+                </div>
             </div>
 
 
             <div>
                 <span className='uppercase text-sm text-gray-500 mr-2'>Order by</span>
-                <ButtonGroup>
+                <div className="inline-flex rounded-md shadow-sm" role='group'>
                     {orderButtons.map(({ label, icon: Icon, value }) => (
                         <Button
                             key={value}
@@ -82,12 +86,12 @@ export default function Filters() {
                             {label}
                         </Button>
                     ))}
-                </ButtonGroup>
+                </div>
             </div>
 
             <div>
                 <span className='uppercase text-sm text-gray-500 mr-2'>Page size</span>
-                <ButtonGroup>
+                <div className="inline-flex rounded-md shadow-sm" role='group'>
                     {pageSizeButtons.map((value, i) => (
                         <Button key={i}
                             onClick={() => setParams({ pageSize: value })}
@@ -97,7 +101,7 @@ export default function Filters() {
                             {value}
                         </Button>
                     ))}
-                </ButtonGroup>
+                </div>
             </div>
         </div>
     )
