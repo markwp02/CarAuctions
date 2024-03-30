@@ -17,7 +17,7 @@ export default function Search() {
     }
 
     function search() {
-        if (pathname != '/') router.push('/');
+        if (pathname !== '/') router.push('/');
         setParams({searchTerm: searchValue});
     }
 
